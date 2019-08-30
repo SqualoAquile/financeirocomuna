@@ -22,27 +22,28 @@ $(function () {
     // console.log('colunas e form: ', apareceLancamento)
     // console.log('colunas e form: ', apareceLancamento.indexOf('conta_analitica')) 
     // inicializa o "form" de lançamento dos vendedores
-    var nomePesq = 'vnd';
-    $.ajax({
-            url: baselink + '/ajax/buscaVendedores',
-            type: 'POST',
-            data: {
-                nome: nomePesq 
-            },
-            dataType: 'json',
-            success: function (dado) {
-                // console.log(dado);
+    // var nomePesq = 'vnd';
+    // $.ajax({
+    //         url: baselink + '/ajax/buscaVendedores',
+    //         type: 'POST',
+    //         data: {
+    //             nome: nomePesq 
+    //         },
+    //         dataType: 'json',
+    //         success: function (dado) {
+    //             // console.log(dado);
 
-                if(dado != ''){
-                    for(var i=0; i< dado.length; i++){
-                        $('#vnd').append("<option value='"+dado[i]['id']+"' >"+dado[i]['nome']+"</option>")
-                    }
-                }else{
-                    alert('Não foram encontrados Vendedores!');  
-                }
+    //             if(dado != ''){
+    //                 for(var i=0; i< dado.length; i++){
+    //                     $('#vnd').append("<option value='"+dado[i]['id']+"' >"+dado[i]['nome']+"</option>")
+    //                 }
+    //             }else{
+    //                 alert('Não foram encontrados Vendedores!');  
+    //             }
                                                             
-        }
-    });
+    //     }
+    // });
+    $('#dt1, #dt2, #dtvenc, #vnd, #btn_lancavnd').parent().parent().hide();
 
     $('#dt1').on('change blur', function(){
         $dt1 = $('#dt1'), $dt2 = $('#dt2'), $dtvenc = $('#dtvenc'), $vnd = $('#vnd');
