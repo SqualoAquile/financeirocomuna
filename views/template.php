@@ -7,44 +7,6 @@
          "link" => "/home"
       ],
       [
-         "text" => "Cadastros",
-         "icon" => "fas fa-save",
-         "permissao" => "%",
-         "link" => "/#",
-         "filhos" => [
-            [
-               "text" => "Vendedores",
-               "icon" => "fas fa-handshake",
-               "permissao" => "vendedores_ver",
-               "link" => "/vendedores"
-            ],
-            [
-               "text" => "Rotas",
-               "icon" => "fas fa-users",
-               "permissao" => "rotas_ver",
-               "link" => "/rotas"
-            ],
-            [
-               "text" => "Produtos",
-               "icon" => "fas fa-boxes",
-               "permissao" => "produtos_ver",
-               "link" => "/produtos"
-            ]
-         ]
-      ],
-      [
-         "text" => "Pedidos",
-         "icon" => "fas fa-bread-slice",
-         "permissao" => "pedidos_ver",
-         "link" => "/pedidos",
-      ],
-      [
-         "text" => "Produção",
-         "icon" => "fas fa-table",
-         "permissao" => "producao_ver",
-         "link" => "/producao",
-      ],
-      [
          "text" => "Financeiro",
          "icon" => "fas fa-money-bill-alt",
          "permissao" => "%",

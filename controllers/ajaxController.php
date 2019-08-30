@@ -12,10 +12,6 @@ class ajaxController extends controller{
     $user = new Usuarios();
 
     $this->parametros = new Parametros;
-    $this->servicos = new Servicos;
-    $this->clientes = new Clientes;
-    $this->orcamentos = new Orcamentos;
-    $this->ordemservico = new Ordemservico;
 
     //verifica se está logado
     if($user->isLogged() == false){
